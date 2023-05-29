@@ -8,4 +8,4 @@ options:
   --csv CSV   output csv name
   
 example:
-python main.py --xml marc.xml --csv output.csv
+python marc.py --xml marc.xml --csv output.csv
