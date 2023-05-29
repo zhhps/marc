@@ -13,7 +13,7 @@ def write_file(xml_name, set_field, output):
     root = tree.getroot()
     info = dict.fromkeys(set_field, '')
     last_tag = None
-    with open(output, 'w', newline='') as file:
+    with open(output, 'w', encoding='utf_8_sig', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(list(set_field))
         for elem in root.iter():
